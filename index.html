@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rick and Morty - Explorador</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Rick and Morty - Universo de Personagens</h1>
+        
+        <div class="controlo-container">
+            <input type="text" id="campo-busca" placeholder="Pesquisar por nome...">
+            
+            <select id="filtro-status">
+                <option value="">Todos os Status</option>
+                <option value="alive">Vivo (Alive)</option>
+                <option value="dead">Morto (Dead)</option>
+                <option value="unknown">Desconhecido</option>
+            </select>
+
+            <button id="btn-favoritos" class="btn-favoritos">Ver Favoritos ❤️ (<span id="contador-favs">0</span>)</button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Container dos Cards -->
+        <section id="cards-container" class="cards-grid"></section>
+
+        <div id="paginacao" class="paginacao-container">
+            <button id="btn-anterior" disabled>Anterior</button>
+            <span id="info-pagina">Página 1</span>
+            <button id="btn-proxima">Próxima</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - Projeto Web Development Front-End</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
